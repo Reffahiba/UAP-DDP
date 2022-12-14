@@ -206,6 +206,78 @@ int games(){
 		}
 		
 		clear();
+		
+		//fitra 
+		mvprintw(2, 11, "No.6 Isi tabel kebenaran dibawah ini dengan benar :");
+		mvprintw(3, 11, "-------------------------------");
+		mvprintw(4, 11, "| p | q | p -> -q | (p -> -q) -> -p|");
+		mvprintw(5, 11, "|----------------------------------|");
+		mvprintw(6, 11, "| T | T |         |                |");
+		mvprintw(7, 11, "| T | F |         |                |");
+		mvprintw(8, 11, "| F | T |         |                |");
+		mvprintw(9, 11, "| F | F |         |                |");
+		mvprintw(10, 11, "-----------------------------------");
+		mvprintw(11, 11, "A. p -> -q = T, F, F, T | (p -> -q) -> -p = T, T, F, T");
+		mvprintw(12, 11, "B. p -> -q = F, T, T, F | (p -> -q) -> -p = F, F, F, T");
+		mvprintw(13, 11, "C. p -> -q = T, F, F, T | (p -> -q) -> -p = T, T, F, F");
+		mvprintw(14, 11, "D. p -> -q = F, T, T, T | (p -> -q) -> -p = T, F, T, T");
+		mvprintw(16, 11, "Jawaban mu : "); scanw("%c", &jawaban[5]);
+			
+		if(jawaban[5] == 'D' || jawaban[5] == 'd'){
+			mvprintw(18, 11, "Jawaban Anda Benar"); mvprintw(12, 31, "Nilai : %d", nilai[5] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(18, 11, "Jawaban Anda Salah"); mvprintw(12, 31, "Nilai : %d", nilai[5] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
+		
+		mvprintw(2, 11, "No.7 Tentukan bilangan desimal dari biner '11111'!");
+		mvprintw(4, 11, "A. 30");
+		mvprintw(5, 11, "B. 31");
+		mvprintw(6, 11, "C. 34");
+		mvprintw(7, 11, "D. 33");
+		mvprintw(9, 11, "Jawaban mu : "); scanw("%c", &jawaban[6]);
+			
+		if(jawaban[6] == 'B' || jawaban[6] == 'b'){
+			mvprintw(11, 11, "Jawaban Anda Benar"); mvprintw(11, 31, "Nilai : %d", nilai[6] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(11, 11, "Jawaban Anda Salah"); mvprintw(11, 31, "Nilai : %d", nilai[6] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
+	
+		mvprintw(2, 11, "No.8 Tentukan bilangan biner dari desimal '26'!");
+		mvprintw(4, 11, "A. 01110");
+		mvprintw(5, 11, "B. 11010");
+		mvprintw(6, 11, "C. 10110");
+		mvprintw(7, 11, "D. 01111");
+		mvprintw(9, 11, "Jawaban mu : "); scanw("%c", &jawaban[7]);
+			
+		if(jawaban[7] == 'B' || jawaban[7] == 'b'){
+			mvprintw(11, 11, "Jawaban Anda Benar"); mvprintw(11, 31, "Nilai : %d", nilai[7] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(11, 11, "Jawaban Anda Salah"); mvprintw(11, 31, "Nilai : %d", nilai[7] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
 	}
 		
 }
