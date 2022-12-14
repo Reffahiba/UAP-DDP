@@ -278,6 +278,49 @@ int games(){
 		}
 		
 		clear();
+		
+		//dilanjutkan oleh saya (anindya)
+		mvprintw(2, 11, "No.9 Tentukan bilangan oktal dari biner '1100110'!");
+		mvprintw(4, 11, "A. 165");
+		mvprintw(5, 11, "B. 140");
+		mvprintw(6, 11, "C. 146");
+		mvprintw(7, 11, "D. 150");
+		mvprintw(9, 11, "Jawaban mu : "); scanw("%c", &jawaban[8]);
+			
+		if(jawaban[8] == 'C' || jawaban[8] == 'c'){
+			mvprintw(11, 11, "Jawaban Anda Benar"); mvprintw(11, 31, "Nilai : %d", nilai[8] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(11, 11, "Jawaban Anda Salah"); mvprintw(11, 31, "Nilai : %d", nilai[8] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
+		
+		mvprintw(2, 11, "No.10 Tentukan bilangan desimal dari heksadesimal 'FA'!");
+		mvprintw(4, 11, "A. 240");
+		mvprintw(5, 11, "B. 250");
+		mvprintw(6, 11, "C. 260");
+		mvprintw(7, 11, "D. 270");
+		mvprintw(9, 11, "Jawaban mu : "); scanw("%c", &jawaban[9]);
+			
+		if(jawaban[9] == 'B' || jawaban[9] == 'b'){
+			mvprintw(11, 11, "Jawaban Anda Benar"); mvprintw(11, 31, "Nilai : %d", nilai[9] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(11, 11, "Jawaban Anda Salah"); mvprintw(11, 31, "Nilai : %d", nilai[9] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
 	}
 		
 }
