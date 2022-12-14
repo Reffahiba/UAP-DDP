@@ -337,6 +337,73 @@ int games(){
 		mvprintw(12, 40, ">> Hasil Anda Adalah : %d <<", hasil);
 		mvprintw(13, 40, "----------------------------");
 		
+//lanjut oleh saya (fitra)
+		if(hasil == 100){
+			mvprintw(14, 40, "Pertahankan Logikamu");
+		}
+		else if(hasil >= 80 && hasil <= 90){
+			mvprintw(14, 40, "Tingkatkan Logikamu");
+		}
+		else if(hasil >= 50 && hasil <= 70){
+			mvprintw(14, 40, "Semangat");
+		}
+		else{
+			mvprintw(14, 40, "AKU TAK BISA BERWORD-WORD");
+		}
+		
+		getch();
+	}
+	else if(pilihan == 2){
+		refresh();
+		clear();
+		mvprintw(2, 11, "Materi :");
+		mvprintw(3, 11, "1. Tabel Kebenaran");
+		mvprintw(4, 11, "2. Hukum Himpunan");
+		mvprintw(5, 11, "3. Konversi Bilangan");
+		mvprintw(8, 11, "What do you choose : "); scanw("%d", &materi);
+		refresh();
+		
+		if(materi == 1 ){
+			clear();
+			mvprintw(2, 8, "1. Tabel Kebenaran");
+			mvprintw(4, 8, "A. AND");
+			mvprintw(5, 8, "-----------------");
+			mvprintw(6, 8, "| p | q | p ^ q |");
+			mvprintw(7, 8, "|---------------|");
+			mvprintw(8, 8, "| T | T |   T   |");
+			mvprintw(9, 8, "| T | F |   F   |");
+			mvprintw(10, 8, "| F | T |   F   |");
+			mvprintw(11, 8, "| F | F |   F   |");
+			mvprintw(12, 8, "-----------------");
+			
+			mvprintw(4, 28, "B. OR");
+			mvprintw(5, 28, "-----------------");
+			mvprintw(6, 28, "| p | q | p v q |");
+			mvprintw(7, 28, "|---------------|");
+			mvprintw(8, 28, "| T | T |   T   |");
+			mvprintw(9, 28, "| T | F |   T   |");
+			mvprintw(10, 28, "| F | T |   T   |");
+			mvprintw(11, 28, "| F | F |   F   |");
+			mvprintw(12, 28, "-----------------");
+			
+			mvprintw(4, 48, "C. NOT");
+			mvprintw(5, 48, "----------");
+			mvprintw(6, 48, "| p | -p |");
+			mvprintw(7, 48, "|--------|");
+			mvprintw(8, 48, "| T |  F |");
+			mvprintw(9, 48, "| F |  T |");
+			mvprintw(10, 48, "----------");
+			
+			mvprintw(14, 8, "D. IMPLIKASI");
+			mvprintw(15, 8, "------------------");
+			mvprintw(16, 8, "| p | q | p -> q |");
+			mvprintw(17, 8, "|----------------|");
+			mvprintw(18, 8, "| T | T |   T    |");
+			mvprintw(19, 8, "| T | F |   F    |");
+			mvprintw(20, 8, "| F | T |   T    |");
+			mvprintw(21, 8, "| F | F |   T    |");
+			mvprintw(22, 8, "------------------");
+		
 	}
 		
 }
