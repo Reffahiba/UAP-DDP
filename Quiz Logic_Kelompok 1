@@ -81,6 +81,27 @@ int games(){
 		getch();
 		clear();
 		
+		mvprintw(2, 11, "No.2 Dibawah ini yang merupakan hukum idempoten yang benar adalah ?");
+		mvprintw(4, 11, "A. p v p = p");
+		mvprintw(5, 11, "B. p ^ F = p");
+		mvprintw(6, 11, "C. p ^ p = T");
+		mvprintw(7, 11, "D. p v T = T ");
+		mvprintw(9, 11, "Jawaban mu : "); scanw("%c", &jawaban[1]);
+		
+		if(jawaban[1] == 'A' || jawaban[1] == 'a'){
+			mvprintw(11, 11, "Jawaban Anda Benar"); mvprintw(11, 31, "Nilai : %d", nilai[1] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(11, 11, "Jawaban Anda Salah"); mvprintw(11, 31, "Nilai : %d", nilai[1] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
+		
 		mvprintw(2, 11, "No.1 Apa sebutan untuk semua kasus bernilai benar ?");
 		mvprintw(4, 11, "A. Kontradiksi");
 		mvprintw(5, 11, "B. Kontingensi");
