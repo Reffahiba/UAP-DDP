@@ -403,7 +403,161 @@ int games(){
 			mvprintw(20, 8, "| F | T |   T    |");
 			mvprintw(21, 8, "| F | F |   T    |");
 			mvprintw(22, 8, "------------------");
+			
+// lanjut oleh reffa
 		
+		mvprintw(14, 28, "E. BIIMPLIKASI");
+			mvprintw(15, 28, "--------==---------");
+			mvprintw(16, 28, "| p | q | p <-> q |");
+			mvprintw(17, 28, "|-----------------|");
+			mvprintw(18, 28, "| T | T |    T    |");
+			mvprintw(19, 28, "| T | F |    F    |");
+			mvprintw(20, 28, "| F | T |    F    |");
+			mvprintw(21, 28, "| F | F |    T    |");
+			mvprintw(22, 28, "-------------------");
+			
+			mvprintw(14, 48, "F. ESKLUSIF OR");
+			mvprintw(15, 48, "-------------------");
+			mvprintw(16, 48, "| p | q |  p + q  |");
+			mvprintw(17, 48, "|-----------------|");
+			mvprintw(18, 48, "| T | T |    F    |");
+			mvprintw(19, 48, "| T | F |    T    |");
+			mvprintw(20, 48, "| F | T |    T    |");
+			mvprintw(21, 48, "| F | F |    F    |");
+			mvprintw(22, 48, "-------------------");
+			refresh();
+			getch();
+			}
+		else if(materi == 2){
+			clear();
+			mvprintw(2, 8, "2. HUKUM HIMPUNAN");
+			mvprintw(4, 8, "A. HUKUM INDENTITAS");
+			mvprintw(5, 8, "   p v F = p");
+			mvprintw(6, 8, "   p ^ T = p");
+	
+			mvprintw(4, 31, "B. HUKUM DOMINASI");
+			mvprintw(5, 31, "   p v T = p");
+			mvprintw(6, 31, "   p ^ F = p");
+			
+			mvprintw(4, 53, "C. HUKUM NEGASI");
+			mvprintw(5, 53, "   p v -p = T");
+			mvprintw(6, 53, "   p ^ -p = F");
+			
+			mvprintw(8, 8, "D. HUKUM IDEMPOTEN");
+			mvprintw(9, 8, "   p v p = p");
+			mvprintw(10, 8, "   p ^ p = p");
+			
+			mvprintw(8, 31, "E. HUKUM INVOLUSI");
+			mvprintw(9, 31, "   -(-p) = p");
+			
+			mvprintw(8, 53, "F. HUKUM ABSORPSI");
+			mvprintw(9, 53, "   p v (p ^ q) = p");
+			mvprintw(10, 53, "   p ^ (p v q) = p");
+			
+			mvprintw(12, 8, "G. HUKUM KOMUTATIF");
+			mvprintw(13, 8, "   p v q = q v p");
+			mvprintw(14, 8, "   p ^ q = q ^ p");
+			
+			mvprintw(12, 31, "H. HUKUM ASOSIATIF");
+			mvprintw(13, 31, "   p v (q v r) = (p v q) v r");
+			mvprintw(14, 31, "   p ^ (q ^ r) = (p ^ q) ^ r");
+			
+			mvprintw(12, 53, "I. HUKUM DISTRIBUTIF");
+			mvprintw(13, 53, "   p v (q ^ r) = (p v q) ^ (p v r)");
+			mvprintw(14, 53, "   p ^ (q v r) = (p ^ r) v (p ^ r)");
+			
+				
+			mvprintw(16, 8, "J. HUKUM DE MORGAN");
+			mvprintw(17, 8, "   -(p v q) = -p ^ -q");
+			mvprintw(18, 8, "   -(p ^ q) = -p v -q");
+			refresh();
+			getch();
+			}
+			
+		else if(materi == 3){
+			clear();
+			mvprintw(2, 8, "3. KONVERSI BILANGAN");
+			mvprintw(4, 8, "A. Bilangan Desimal ke Bilangan Biner");
+			mvprintw(5, 8, "   Contoh : Ubah bilangan desimal 21 ke biner");
+			mvprintw(6, 8, "-------------------");
+			mvprintw(7, 8, "| 21 : 2 = 10 | 1 |");
+			mvprintw(8, 8, "|-----------------|");
+			mvprintw(9, 8, "| 10 : 2 =  5 | 0 |");
+			mvprintw(10, 8, "|-----------------|");
+			mvprintw(11, 8, "|  5 : 2 = 2 | 1 |");
+			mvprintw(12, 8, "|-----------------|");
+			mvprintw(14, 8, "|  2 : 2 = 1 | 0  |");
+			mvprintw(15, 8, "|-----------------|");
+			mvprintw(16, 8, "|  1 : 2 = 1 | 1  |");
+			mvprintw(17, 8, "-------------------");
+			mvprintw(18, 8, "Jadi bilangan biner dari desimal 21 adalah 10101");
+			
+			mvprintw(20, 8, "B. Bilangan Desimal ke Bilangan Oktal");
+			mvprintw(21, 8, "   Contoh : Ubah bilangan desimal 125 ke oktal");
+			mvprintw(22, 8, "-------------------");
+			mvprintw(23, 8, "| 125 : 8 = 15 | 5 |");
+			mvprintw(24, 8, "|------------------|");
+			mvprintw(25, 8, "|  15 : 8 =  1 | 7 |");
+			mvprintw(26, 8, "|------------------|");
+			mvprintw(27, 8, "|   1 : 8 =  0 | 1 |");
+			mvprintw(28, 8, "-------------------");
+			mvprintw(29, 8, "Jadi bilangan oktal dari desimal 125 adalah 175");
+			
+			mvprintw(4, 46, "C. Bilangan Desimal ke Bilangan Heksadesimal");
+			mvprintw(5, 46, "   Contoh : Ubah bilangan oktal 1540 ke heksadesimal");
+			mvprintw(6, 46, "----------------------");
+			mvprintw(7, 46, "| 1540 : 16 = 96 | 4 |");
+			mvprintw(8, 46, "|--------------------|");
+			mvprintw(9, 46, "|   96 : 16 =  6 | 0 |");
+			mvprintw(10, 46, "|--------------------|");
+			mvprintw(11, 46, "|    6 : 16 =  0 | 6 |");
+			mvprintw(12, 46, "----------------------");
+			mvprintw(13, 46, "Jadi bilangan heksadesimal dari desimal 1540 adalah 604");
+			
+			mvprintw(20, 46, "D. Bilangan Biner ke Bilangan Desimal");
+			mvprintw(21, 46, "   Contoh : Ubah bilangan biner 10111 ke desimal");
+			mvprintw(22, 46, "-----------------------------------------");
+			mvprintw(23, 46, "| 1*2^4 | 0*2^3 | 1*2^2 | 1*2^1 | 1*2^0 |");
+			mvprintw(24, 46, "|---------------------------------------|");
+			mvprintw(25, 46, "|  16   |   0   |   4   |   2   |   1   |");
+			mvprintw(26, 46, "-----------------------------------------");
+			mvprintw(27, 46, "Jadi bilangan desimal dari biner 10111 adalah 23");
+			
+			getch();
+			}
+			
+	}
+	else if(pilihan == 3){
+		clear();
+		mvprintw(3, 11, "¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦       ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦      ¦¦¦¦¦¦  ¦¦¦     ¦¦¦       ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦       ¦¦¦");
+		mvprintw(4, 11, "¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¦¦     ¦¦¦¦¦¦ ¦¦¦      ¦¦¦       ¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦       ¦¦¦");
+        	mvprintw(5, 11, "    ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦¦¦¦    ¦¦¦¦¦¦¦¦¦       ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");   
+        	mvprintw(6, 11, "    ¦¦¦     ¦¦¦_______¦¦¦¦¦¦_______¦¦¦¦¦¦ ¦¦¦   ¦¦¦¦¦¦¦¦        ¦¦¦_______¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+        	mvprintw(7, 11, "    ¦¦¦     ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦  ¦¦¦  ¦¦¦¦¦¦¦         ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+        	mvprintw(8, 11, "    ¦¦¦     ¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦¦         ¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+        	mvprintw(9, 11, "    ¦¦¦     ¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦¦         ¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+        	mvprintw(10, 11, "    ¦¦¦     ¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦¦         ¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+    		mvprintw(11, 11, "    ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦    ¦¦¦¦¦¦¦¦¦¦¦¦            ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+        	mvprintw(12, 11, "    ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦     ¦¦¦¦¦¦¦¦ ¦¦¦           ¦¦¦     ¦¦¦_______¦¦¦¦¦¦_______¦¦¦");
+        	mvprintw(13, 11, "    ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦      ¦¦¦¦¦¦¦  ¦¦¦          ¦¦¦     ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦");
+        	mvprintw(14, 11, "     ¯       ¯         ¯  ¯         ¯  ¯        ¯¯  ¯    ¯            ¯       ¯¯¯¯¯¯¯¯¯¯¯  ¯¯¯¯¯¯¯¯¯¯¯ ");                                                                                                
+		refresh();
+		getch();	
 	}
 		
 }
+int main(){
+	initscr();
+	loading();
+	games();
+	clear();
+	main();
+	refresh();
+	getch();
+	endwin();
+	
+	return 0;
+}
+	
+		
+
