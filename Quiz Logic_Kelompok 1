@@ -47,3 +47,60 @@ void header(){
 	mvprintw(8, 8, " //******* **//******* /** ********      /******** //*******   //******** /** //****** ");
 	mvprintw(9, 8, "  /////// //  ///////  // ////////       ////////   ///////     ////////  //   ////// ");
 }
+
+//fitra dwi nugraha
+int games(){
+	char jawaban[10], nama;
+	int pilihan, materi, nilai[10], hasil, y = 1, x = 1;
+	bool kembali;
+	
+	header();
+	mvprintw(12, 40, "1. Play Game");
+	mvprintw(13, 40, "2. Help");
+	mvprintw(14, 40, "3. Exit");
+	mvprintw(15, 40, "What do you choose : "); scanw("%d", &pilihan);
+	
+	if(pilihan == 1){
+		refresh();
+		clear();
+		
+		mvprintw(2, 11, "   _¦¦¦¦¦¦¦¦ ¦¦¦    ¦_   _¦          _¦¦¦¦¦¦¦¦    _¦¦¦¦¦¦¦¦");
+		mvprintw(3, 11, "  ¦¦¦    ¦¦¦ ¦¦¦    ¦¦¦ ¦¦¦         ¦¦¦    ¦¦¦   ¦¦¦    ¦¦¦"); 
+		mvprintw(4, 11, "  ¦¦¦    ¦¦¦ ¦¦¦    ¦¦¦ ¦¦¦         ¦¦¦    ¦¯    ¦¦¦    ¦¯");  
+		mvprintw(5, 11, " _¦¦¦____¦¦¯ ¦¦¦    ¦¦¦ ¦¦¦        _¦¦¦___       ¦¦¦       "); 
+		mvprintw(6, 11, "¯¯¦¦¦¯¯¯¯¯   ¦¦¦    ¦¦¦ ¦¦¦       ¯¯¦¦¦¯¯¯     ¯¦¦¦¦¦¦¦¦¦¦¦"); 
+		mvprintw(7, 11, "¯¦¦¦¦¦¦¦¦¦¦¦ ¦¦¦    ¦¦¦ ¦¦¦         ¦¦¦    ¦_           ¦¦¦"); 
+		mvprintw(8, 11, "  ¦¦¦    ¦¦¦ ¦¦¦    ¦¦¦ ¦¦¦¦    _   ¦¦¦    ¦¦¦    _¦    ¦¦¦"); 
+		mvprintw(9, 11, "  ¦¦¦    ¦¦¦ ¦¦¦¦¦¦¦¦¯  ¦¦¦¦¦__¦¦   ¦¦¦¦¦¦¦¦¦¦  _¦¦¦¦¦¦¦¦¯ "); 
+		mvprintw(10, 11, "  ¦¦¦    ¦¦¦            ¯                                  "); 
+
+		mvprintw(12, 11, "- Permainan ini dirancang untuk melatih tingkat pemahaman tentang Logika");
+		mvprintw(13, 11, "- Siapkan Kertas untuk mengoret jawaban");
+		mvprintw(14, 11, "- Lalu pilih jawaban dengan benar");
+		refresh();
+		getch();
+		clear();
+		
+		mvprintw(2, 11, "No.1 Apa sebutan untuk semua kasus bernilai benar ?");
+		mvprintw(4, 11, "A. Kontradiksi");
+		mvprintw(5, 11, "B. Kontingensi");
+		mvprintw(6, 11, "C. Tautologi");
+		mvprintw(7, 11, "D. Tauntlogi");
+		mvprintw(9, 11, "Jawaban mu : "); scanw("%c", &jawaban[0]); 
+		
+		if(jawaban[0] == 'C' || jawaban[0] == 'c'){
+			mvprintw(11, 11, "Jawaban Anda Benar"); mvprintw(11, 31, "Nilai : %d", nilai[0] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(11, 11, "Jawaban Anda Salah"); mvprintw(11, 31, "Nilai : %d", nilai[0] = 0 );
+			refresh();
+			getch();
+		}
+		
+		clear();
+	}
+		
+}
