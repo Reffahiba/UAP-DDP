@@ -121,6 +121,91 @@ int games(){
 		}
 		
 		clear();
+		
+		//anindya
+		mvprintw(2, 11, "No.3 Isi tabel kebenaran dibawah ini dengan benar :");
+		mvprintw(3, 11, "-------------------------------");
+		mvprintw(4, 11, "| p | q | p ^ q | -p v (p ^ q)|");
+		mvprintw(5, 11, "|-----------------------------|");
+		mvprintw(6, 11, "| T | T |       |             |");
+		mvprintw(7, 11, "| T | F |       |             |");
+		mvprintw(8, 11, "| F | T |       |             |");
+		mvprintw(9, 11, "| F | F |       |             |");
+		mvprintw(10, 11, "-------------------------------");
+		mvprintw(11, 11, "A. p ^ q = T, F, F, F | -p v (p ^ q) = T, F, F, T");
+		mvprintw(12, 11, "B. p ^ q = F, T, T, T | -p v (p ^ q) = F, F, T, T");
+		mvprintw(13, 11, "C. p ^ q = T, T, F, F | -p v (p ^ q) = F, T, F, F");
+		mvprintw(14, 11, "D. p ^ q = T, F, F, F | -p v (p ^ q) = T, F, T, T");
+		mvprintw(16, 11, "Jawaban mu : "); scanw("%c", &jawaban[2]);
+		
+		if(jawaban[2] == 'D' || jawaban[2] == 'd'){
+			mvprintw(18, 11, "Jawaban Anda Benar"); mvprintw(18, 31, "Nilai : %d", nilai[2] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(18, 11, "Jawaban Anda Salah"); mvprintw(18, 31, "Nilai : %d", nilai[2] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
+		
+		mvprintw(2, 11, "No.4 Isi tabel kebenaran dibawah ini dengan benar :");
+		mvprintw(3, 11, "--------------------------------------");
+		mvprintw(4, 11, "| p | q | r | -p v q | (-p v q) -> r |");
+		mvprintw(5, 11, "|------------------------------------|");
+		mvprintw(6, 11, "| T | T | T |        |               |");
+		mvprintw(7, 11, "| T | T | F |        |               |");
+		mvprintw(8, 11, "| T | F | T |        |               |");
+		mvprintw(9, 11, "| T | F | F |        |               |");
+		mvprintw(10, 11, "| F | T | T |        |               |");
+		mvprintw(11, 11, "| F | T | F |        |               |");
+		mvprintw(12, 11, "| F | F | T |        |               |");
+		mvprintw(13, 11, "| F | F | F |        |               |");
+		mvprintw(14, 11, "-------------------------------------");
+		mvprintw(15, 11, "A. -p v q = T, F, F, T, T, F, F, T | (-p v q) -> r = F, T, T, F, T, T, T, F");
+		mvprintw(16, 11, "B. -p v q = T, T, F, T, F, T, T, F | (-p v q) -> r = T, T, T, F, F, T, F, F");
+		mvprintw(17, 11, "C. -p v q = T, T, F, F, T, T, T, T | (-p v q) -> r = T, F, T, T, T, F, T, T");
+		mvprintw(18, 11, "D. -p v q = T, F, T, F, F, T, F, F | (-p v q) -> r = F, F, T, F, T, F, F, T");
+		mvprintw(20, 11, "Jawaban mu : "); scanw("%c", &jawaban[3]);
+	
+		if(jawaban[3] == 'C' || jawaban[3] == 'c'){
+			mvprintw(22, 11, "Jawaban Anda Benar"); mvprintw(22, 31, "Nilai : %d", nilai[3] = 10);
+			refresh();
+			getch();
+			clear();
+		}	
+		else{
+			mvprintw(22, 11, "Jawaban Anda Salah"); mvprintw(22, 31, "Nilai : %d", nilai[3] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
+		
+		mvprintw(2, 11, "No.5 Sebutkan hukum-hukum logika yang digunakan agar proposisi majemuk dibawah ini ekuivalen!");
+		mvprintw(3, 11, "     p v -(p v q) = p v -q");
+		mvprintw(5, 11, "A. De Morgan, Distributif, Negasi, Identitas");
+		mvprintw(6, 11, "B. De Morgan, Asosiatif, Negasi, Identitas");
+		mvprintw(7, 11, "C. Negasi, Asositif, Dominasi, Identitas");
+		mvprintw(8, 11, "D. Negasi, De Morgan, Dominasi, Identitas");
+		mvprintw(10, 11, "Jawaban mu : "); scanw("%c", &jawaban[4]);
+			
+		if(jawaban[4] == 'A' || jawaban[4] == 'a'){
+			mvprintw(12, 11, "Jawaban Anda Benar"); mvprintw(12, 31, "Nilai : %d", nilai[4] = 10);
+			refresh();
+			getch();
+			clear();
+		}
+		else{
+			mvprintw(12, 11, "Jawaban Anda Salah"); mvprintw(12, 31, "Nilai : %d", nilai[4] = 0);
+			refresh();
+			getch();
+		}
+		
+		clear();
 	}
 		
 }
