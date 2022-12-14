@@ -2,3 +2,48 @@
 //Reffa Hibatullah_2217051157
 //Anindya Salsabila_2217051113
 //Fitra Dwi Nugraha_2257051007
+
+#include <ncurses/ncurses.h>
+#include <windows.h>
+
+void loading(){
+	for(int i=0; i < 3; i++){
+		mvprintw(6, 19, "Loading");
+		mvprintw(7, 15, "   ");
+		refresh();
+		Sleep(150);
+		
+		mvprintw(7, 15, ">_<");
+		refresh();
+		Sleep(100);
+		
+		mvprintw(7, 18, "o_o");
+		refresh();
+		Sleep(100);
+		
+		mvprintw(7, 21, "-_-");
+		refresh();
+		Sleep(100);
+		
+		mvprintw(7, 24, "$_$");
+		refresh();
+		Sleep(100);
+		
+		mvprintw(7, 27, "+_+");
+		refresh();
+		Sleep(100);
+		
+		clear();
+	}
+}
+	
+void header(){
+	mvprintw(2, 8, "   *******    **     ** ** ********       **         *******     ********  **   ****** ");
+	mvprintw(3, 8, "  **/////**  /**    /**/**//////**       /**        **/////**   **//////**/**  **////**");	
+	mvprintw(4, 8, " **     //** /**    /**/**     **        /**       **     //** **      // /** **    // ");
+	mvprintw(5, 8, "/**      /** /**    /**/**    **         /**      /**      /**/**         /**/**");
+	mvprintw(6, 8, "/**    **/** /**    /**/**   **          /**      /**      /**/**    *****/**/**");
+	mvprintw(7, 8, "//**  // **  /**    /**/**  **           /**      //**     ** //**  ////**/**//**    **");
+	mvprintw(8, 8, " //******* **//******* /** ********      /******** //*******   //******** /** //****** ");
+	mvprintw(9, 8, "  /////// //  ///////  // ////////       ////////   ///////     ////////  //   ////// ");
+}
