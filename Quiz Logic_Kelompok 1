@@ -3,6 +3,7 @@
 //Anindya Salsabila_2217051113
 //Fitra Dwi Nugraha_2257051007
 
+// reffa
 #include <ncurses/ncurses.h>
 #include <windows.h>
 
@@ -51,8 +52,7 @@ void header(){
 //fitra dwi nugraha
 int games(){
 	char jawaban[10], nama;
-	int pilihan, materi, nilai[10], hasil, y = 1, x = 1;
-	bool kembali;
+	int pilihan, materi, nilai[10], hasil;
 	
 	header();
 	mvprintw(12, 40, "1. Play Game");
@@ -484,44 +484,44 @@ int games(){
 			mvprintw(8, 8, "|-----------------|");
 			mvprintw(9, 8, "| 10 : 2 =  5 | 0 |");
 			mvprintw(10, 8, "|-----------------|");
-			mvprintw(11, 8, "|  5 : 2 = 2 | 1 |");
+			mvprintw(11, 8, "|  5 : 2 = 2 | 1  |");
 			mvprintw(12, 8, "|-----------------|");
-			mvprintw(14, 8, "|  2 : 2 = 1 | 0  |");
-			mvprintw(15, 8, "|-----------------|");
-			mvprintw(16, 8, "|  1 : 2 = 1 | 1  |");
-			mvprintw(17, 8, "-------------------");
-			mvprintw(18, 8, "Jadi bilangan biner dari desimal 21 adalah 10101");
+			mvprintw(13, 8, "|  2 : 2 = 1 | 0  |");
+			mvprintw(14, 8, "|-----------------|");
+			mvprintw(15, 8, "|  1 : 2 = 1 | 1  |");
+			mvprintw(16, 8, "-------------------");
+			mvprintw(17, 8, "Jadi bilangan biner dari desimal 21 adalah 10101");
 			
 			mvprintw(20, 8, "B. Bilangan Desimal ke Bilangan Oktal");
 			mvprintw(21, 8, "   Contoh : Ubah bilangan desimal 125 ke oktal");
-			mvprintw(22, 8, "-------------------");
+			mvprintw(22, 8, "--------------------");
 			mvprintw(23, 8, "| 125 : 8 = 15 | 5 |");
 			mvprintw(24, 8, "|------------------|");
 			mvprintw(25, 8, "|  15 : 8 =  1 | 7 |");
 			mvprintw(26, 8, "|------------------|");
 			mvprintw(27, 8, "|   1 : 8 =  0 | 1 |");
-			mvprintw(28, 8, "-------------------");
+			mvprintw(28, 8, "--------------------");
 			mvprintw(29, 8, "Jadi bilangan oktal dari desimal 125 adalah 175");
 			
-			mvprintw(4, 46, "C. Bilangan Desimal ke Bilangan Heksadesimal");
-			mvprintw(5, 46, "   Contoh : Ubah bilangan oktal 1540 ke heksadesimal");
-			mvprintw(6, 46, "----------------------");
-			mvprintw(7, 46, "| 1540 : 16 = 96 | 4 |");
-			mvprintw(8, 46, "|--------------------|");
-			mvprintw(9, 46, "|   96 : 16 =  6 | 0 |");
-			mvprintw(10, 46, "|--------------------|");
-			mvprintw(11, 46, "|    6 : 16 =  0 | 6 |");
-			mvprintw(12, 46, "----------------------");
-			mvprintw(13, 46, "Jadi bilangan heksadesimal dari desimal 1540 adalah 604");
+			mvprintw(4, 58, "C. Bilangan Desimal ke Bilangan Heksadesimal");
+			mvprintw(5, 58, "   Contoh : Ubah bilangan oktal 1540 ke heksadesimal");
+			mvprintw(6, 58, "----------------------");
+			mvprintw(7, 58, "| 1540 : 16 = 96 | 4 |");
+			mvprintw(8, 58, "|--------------------|");
+			mvprintw(9, 58, "|   96 : 16 =  6 | 0 |");
+			mvprintw(10, 58, "|--------------------|");
+			mvprintw(11, 58, "|    6 : 16 =  0 | 6 |");
+			mvprintw(12, 58, "----------------------");
+			mvprintw(13, 58, "Jadi bilangan heksadesimal dari desimal 1540 adalah 604");
 			
-			mvprintw(20, 46, "D. Bilangan Biner ke Bilangan Desimal");
-			mvprintw(21, 46, "   Contoh : Ubah bilangan biner 10111 ke desimal");
-			mvprintw(22, 46, "-----------------------------------------");
-			mvprintw(23, 46, "| 1*2^4 | 0*2^3 | 1*2^2 | 1*2^1 | 1*2^0 |");
-			mvprintw(24, 46, "|---------------------------------------|");
-			mvprintw(25, 46, "|  16   |   0   |   4   |   2   |   1   |");
-			mvprintw(26, 46, "-----------------------------------------");
-			mvprintw(27, 46, "Jadi bilangan desimal dari biner 10111 adalah 23");
+			mvprintw(20, 58, "D. Bilangan Biner ke Bilangan Desimal");
+			mvprintw(21, 58, "   Contoh : Ubah bilangan biner 10111 ke desimal");
+			mvprintw(22, 58, "-----------------------------------------");
+			mvprintw(23, 58, "| 1*2^4 | 0*2^3 | 1*2^2 | 1*2^1 | 1*2^0 |");
+			mvprintw(24, 58, "|---------------------------------------|");
+			mvprintw(25, 58, "|  16   |   0   |   4   |   2   |   1   |");
+			mvprintw(26, 58, "-----------------------------------------");
+			mvprintw(27, 58, "Jadi bilangan desimal dari biner 10111 adalah 23");
 			
 			getch();
 			}
@@ -531,11 +531,11 @@ int games(){
 		clear();
 		mvprintw(3, 11, "¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦       ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦      ¦¦¦¦¦¦  ¦¦¦     ¦¦¦       ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦       ¦¦¦");
 		mvprintw(4, 11, "¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¦¦     ¦¦¦¦¦¦ ¦¦¦      ¦¦¦       ¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦       ¦¦¦");
-        	mvprintw(5, 11, "    ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦¦¦¦    ¦¦¦¦¦¦¦¦¦       ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");   
-        	mvprintw(6, 11, "    ¦¦¦     ¦¦¦_______¦¦¦¦¦¦_______¦¦¦¦¦¦ ¦¦¦   ¦¦¦¦¦¦¦¦        ¦¦¦_______¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
-        	mvprintw(7, 11, "    ¦¦¦     ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦  ¦¦¦  ¦¦¦¦¦¦¦         ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
-        	mvprintw(8, 11, "    ¦¦¦     ¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦¦         ¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
-        	mvprintw(9, 11, "    ¦¦¦     ¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦¦         ¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+       		mvprintw(5, 11, "    ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦¦¦¦    ¦¦¦¦¦¦¦¦¦       ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");   
+       		mvprintw(6, 11, "    ¦¦¦     ¦¦¦_______¦¦¦¦¦¦_______¦¦¦¦¦¦ ¦¦¦   ¦¦¦¦¦¦¦¦        ¦¦¦_______¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+       		mvprintw(7, 11, "    ¦¦¦     ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦  ¦¦¦  ¦¦¦¦¦¦¦         ¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+       		mvprintw(8, 11, "    ¦¦¦     ¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦¦         ¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
+       		mvprintw(9, 11, "    ¦¦¦     ¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦¦         ¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
         	mvprintw(10, 11, "    ¦¦¦     ¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦¯¯¯¯¯¯¯¦¦¦¦¦¦   ¦¦¦ ¦¦¦¦¦¦¦¦         ¯¯¯¯¦¦¦¯¯¯¯ ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
     		mvprintw(11, 11, "    ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦    ¦¦¦¦¦¦¦¦¦¦¦¦            ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦");
         	mvprintw(12, 11, "    ¦¦¦     ¦¦¦       ¦¦¦¦¦¦       ¦¦¦¦¦¦     ¦¦¦¦¦¦¦¦ ¦¦¦           ¦¦¦     ¦¦¦_______¦¦¦¦¦¦_______¦¦¦");
@@ -558,6 +558,3 @@ int main(){
 	
 	return 0;
 }
-	
-		
-
