@@ -339,16 +339,16 @@ int games(){
 		
 //lanjut oleh saya (fitra)
 		if(hasil == 100){
-			mvprintw(14, 40, "Pertahankan Logikamu");
+			mvprintw(14, 45, "Pertahankan Logikamu");
 		}
 		else if(hasil >= 80 && hasil <= 90){
-			mvprintw(14, 40, "Tingkatkan Logikamu");
+			mvprintw(14, 45, "Tingkatkan Logikamu");
 		}
 		else if(hasil >= 50 && hasil <= 70){
-			mvprintw(14, 40, "Semangat");
+			mvprintw(14, 45, "Semangat");
 		}
 		else{
-			mvprintw(14, 40, "AKU TAK BISA BERWORD-WORD");
+			mvprintw(14, 45, "AKU TAK BISA BERWORD-WORD");
 		}
 		
 		getch();
@@ -450,9 +450,9 @@ int games(){
 			mvprintw(8, 31, "E. HUKUM INVOLUSI");
 			mvprintw(9, 31, "   -(-p) = p");
 			
-			mvprintw(8, 53, "F. HUKUM ABSORPSI");
-			mvprintw(9, 53, "   p v (p ^ q) = p");
-			mvprintw(10, 53, "   p ^ (p v q) = p");
+			mvprintw(8, 62, "F. HUKUM ABSORPSI");
+			mvprintw(9, 62, "   p v (p ^ q) = p");
+			mvprintw(10, 62, "   p ^ (p v q) = p");
 			
 			mvprintw(12, 8, "G. HUKUM KOMUTATIF");
 			mvprintw(13, 8, "   p v q = q v p");
@@ -462,9 +462,9 @@ int games(){
 			mvprintw(13, 31, "   p v (q v r) = (p v q) v r");
 			mvprintw(14, 31, "   p ^ (q ^ r) = (p ^ q) ^ r");
 			
-			mvprintw(12, 53, "I. HUKUM DISTRIBUTIF");
-			mvprintw(13, 53, "   p v (q ^ r) = (p v q) ^ (p v r)");
-			mvprintw(14, 53, "   p ^ (q v r) = (p ^ r) v (p ^ r)");
+			mvprintw(12, 62, "I. HUKUM DISTRIBUTIF");
+			mvprintw(13, 62, "   p v (q ^ r) = (p v q) ^ (p v r)");
+			mvprintw(14, 62, "   p ^ (q v r) = (p ^ r) v (p ^ r)");
 			
 				
 			mvprintw(16, 8, "J. HUKUM DE MORGAN");
