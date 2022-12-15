@@ -224,13 +224,13 @@ int games(){
 		mvprintw(16, 11, "Jawaban mu : "); scanw("%c", &jawaban[5]);
 			
 		if(jawaban[5] == 'D' || jawaban[5] == 'd'){
-			mvprintw(18, 11, "Jawaban Anda Benar"); mvprintw(12, 31, "Nilai : %d", nilai[5] = 10);
+			mvprintw(18, 11, "Jawaban Anda Benar"); mvprintw(18, 31, "Nilai : %d", nilai[5] = 10);
 			refresh();
 			getch();
 			clear();
 		}
 		else{
-			mvprintw(18, 11, "Jawaban Anda Salah"); mvprintw(12, 31, "Nilai : %d", nilai[5] = 0);
+			mvprintw(18, 11, "Jawaban Anda Salah"); mvprintw(18, 31, "Nilai : %d", nilai[5] = 0);
 			refresh();
 			getch();
 		}
